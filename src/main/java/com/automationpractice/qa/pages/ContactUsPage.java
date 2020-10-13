@@ -62,5 +62,9 @@ public class ContactUsPage extends Main {
 	public String verifySentMessage() {
 		return successMessage.getText();
 	}
+	
+	public String getTitle() {
+		return driver.getTitle();
+	}
 
 }

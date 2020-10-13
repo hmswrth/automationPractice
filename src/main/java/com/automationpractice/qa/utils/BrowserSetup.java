@@ -9,7 +9,7 @@ public class BrowserSetup extends Main {
 	static String driverPath = System.getProperty("user.dir") + "/Drivers/";
 
 	public static WebDriver setBrower() {
-		if (prop.getProperty("browser") == "chrome") {
+		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver.exe");
 			driver = new ChromeDriver();
 		}

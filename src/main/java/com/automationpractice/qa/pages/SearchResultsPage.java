@@ -46,5 +46,9 @@ public class SearchResultsPage extends Main {
 	public String verifyWhetherCartItemValueIncreased() {
 		return cartItemCount.getAttribute("value");
 	}
+	
+	public String getTitle() {
+		return driver.getTitle();
+	}
 
 }

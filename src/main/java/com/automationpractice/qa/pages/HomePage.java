@@ -22,7 +22,7 @@ public class HomePage extends Main {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public ContactUsPage contactUs() {
+	public ContactUsPage clickOnContactUsBtn() {
 		contactUsBtn.click();
 		return new ContactUsPage();
 	}
@@ -30,6 +30,7 @@ public class HomePage extends Main {
 	public SearchResultsPage search(String searchData) {
 		searchBox.sendKeys(searchData);
 		searchBtn.click();
+		
 		return new SearchResultsPage();
 	}
 

@@ -11,8 +11,9 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 import com.automationpractice.qa.base.Main;
 
+
 public class ReadFromExcel extends Main {
-	static String filePath = System.getProperty("user.dir") + "/src/main/java/com/udemy/qa/testdata/testdata.xlsx";
+	static String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\com\\automationpractice\\qa\\testdata\\testdata.xlsx";
 	static Workbook book;
 	static Sheet sheet;
 
