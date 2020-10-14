@@ -1,5 +1,7 @@
 package com.automationpractice.qa.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -24,13 +26,14 @@ public class HomePage extends Main {
 	
 	public ContactUsPage clickOnContactUsBtn() {
 		contactUsBtn.click();
+		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		return new ContactUsPage();
 	}
 	
 	public SearchResultsPage search(String searchData) {
 		searchBox.sendKeys(searchData);
 		searchBtn.click();
-		
+		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		return new SearchResultsPage();
 	}
 

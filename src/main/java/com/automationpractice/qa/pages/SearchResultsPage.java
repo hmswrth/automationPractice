@@ -1,5 +1,7 @@
 package com.automationpractice.qa.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -29,6 +31,7 @@ public class SearchResultsPage extends Main {
 
 	public void clickAddToCart() {
 		addToCartBtn.click();
+		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 	}
 	
 	public String verifyProductAddedToCart() {
@@ -37,10 +40,12 @@ public class SearchResultsPage extends Main {
 	
 	public void proceedToCart() {
 		proceedToCartBtn.click();
+		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 	}
 	
 	public void increaseCartItemQuantity() {
 		increaseCartItemBtn.click();
+		driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
 	}
 	
 	public String verifyWhetherCartItemValueIncreased() {

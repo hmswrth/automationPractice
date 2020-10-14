@@ -14,8 +14,8 @@ public class Main {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static JavascriptExecutor js;
-	public static long PAGE_LOAD_TIMEOUT = 20;
-	public static long IMPLICIT_WAIT = 10;
+	public static long PAGE_LOAD_TIMEOUT = 20;  //default value for page loadout
+	public static long IMPLICIT_WAIT = 10;  //default implicit wait 
 	
 	public Main() {
 		

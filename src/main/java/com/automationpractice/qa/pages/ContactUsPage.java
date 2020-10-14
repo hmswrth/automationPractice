@@ -1,5 +1,7 @@
 package com.automationpractice.qa.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -60,6 +62,7 @@ public class ContactUsPage extends Main {
 
 	public void submitButton() {
 		submitBtn.click();
+		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 	}
 
 	public String verifySentMessage() {

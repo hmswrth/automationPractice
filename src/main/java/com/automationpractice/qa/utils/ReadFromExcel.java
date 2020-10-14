@@ -17,7 +17,7 @@ public class ReadFromExcel extends Main {
 	static Workbook book;
 	static Sheet sheet;
 
-	public static Object[][] getTestData(String sheetName) {
+	public static Object[][] getTestData(String sheetName) {  //reads the data from excel with given sheetname and returns it in 2D object
 		FileInputStream file = null;
 		try {
 			file = new FileInputStream(filePath);
