@@ -17,7 +17,7 @@ public class ContactUsPageTest extends Main {
 		super();
 	}
 
-	@BeforeTest
+	@BeforeMethod
 	public void setUp() {
 		init();
 		home = new HomePage();
@@ -39,15 +39,11 @@ public class ContactUsPageTest extends Main {
 	@Test(priority = 2, dataProvider = "getSearchDataFromExcel")
 	public void fillOutTheForm(String emailData, String orderIDData, String messageData) {
 		contact.fillOutTheForm(emailData, orderIDData, messageData);
-	}
-
-	@Test(priority = 3)
-	public void submitBtnClick() {
 		contact.submitButton();
-		Assert.assertEquals(contact.verifySentMessage(), "");
+		Assert.assertEquals(contact.verifySentMessage(), "Your message has been successfully sent to our team.");
 	}
 
-	@AfterTest
+	@AfterMethod
 	public void closeBrowser() {
 		driver.close();
 	}

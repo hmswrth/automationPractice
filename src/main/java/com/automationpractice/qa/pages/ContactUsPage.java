@@ -31,8 +31,8 @@ public class ContactUsPage extends Main {
 
 	@FindBy(xpath = "//*[@id='center_column']/p")
 	WebElement successMessage;
-	
-	@FindBy(xpath = "//*[@id='uniform-id_contact']")
+
+	@FindBy(xpath = "//*[@id='uniform-id_contact']/span")
 	WebElement selectBoxOption;
 
 	public ContactUsPage() {
@@ -49,7 +49,9 @@ public class ContactUsPage extends Main {
 	}
 
 	public void enterOrderID(String testData) {
-		orderID.sendKeys(testData);
+		double temp = Double.parseDouble(testData);
+		int order = (int) temp;
+		orderID.sendKeys(Integer.toString(order));
 	}
 
 	public void uploadFile() {
@@ -68,23 +70,22 @@ public class ContactUsPage extends Main {
 	public String verifySentMessage() {
 		return successMessage.getText();
 	}
-	
+
 	public String getTitle() {
 		return driver.getTitle();
 	}
-	
+
 	public String verifySelectBoxOption() {
 		return selectBoxOption.getText();
-		
+
 	}
-	
-	public void fillOutTheForm(String emailData, String orderIDData, String messageData) {  //fills out all the input details in the form
-		Select select = new Select(selectBox);
-		select.selectByValue("2");  //select box
-		email.sendKeys(emailData);  //email
-		orderID.sendKeys(orderIDData);  //order ID 
-		fileUpload.sendKeys(System.getProperty("user.dir") + "/com/automationpractice/qa/testdata/peterpan.jpg");  //file upload
-		message.sendKeys(messageData);  //message
+
+	public void fillOutTheForm(String emailData, String orderIDData, String messageData) { // fills out all the input
+																							// details in the form
+		this.selectSubjectHeading();
+		this.enterEmail(emailData);
+		this.enterOrderID(orderIDData);
+		this.enterMessage(messageData);
 	}
 
 }

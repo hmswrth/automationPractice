@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-14T15:31:54 IST" name="Default suite" finished-at="2020-10-14T15:32:14 IST" duration-ms="19996">
+  <suite started-at="2020-10-14T16:03:43 IST" name="Default suite" finished-at="2020-10-14T16:04:03 IST" duration-ms="20180">
     <groups>
     </groups>
-    <test started-at="2020-10-14T15:31:54 IST" name="Default test" finished-at="2020-10-14T15:32:14 IST" duration-ms="19996">
+    <test started-at="2020-10-14T16:03:43 IST" name="Default test" finished-at="2020-10-14T16:04:03 IST" duration-ms="20180">
       <class name="com.automationpractice.qa.testcases.SearchResultsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationpractice.qa.testcases.SearchResultsPageTest@7e9131d5]" started-at="2020-10-14T15:31:54 IST" name="setUp" finished-at="2020-10-14T15:32:06 IST" duration-ms="11741" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationpractice.qa.testcases.SearchResultsPageTest@7e9131d5]" started-at="2020-10-14T16:03:43 IST" name="setUp" finished-at="2020-10-14T16:03:54 IST" duration-ms="10919" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchForDress(java.lang.String)[pri:1, instance:com.automationpractice.qa.testcases.SearchResultsPageTest@7e9131d5]" started-at="2020-10-14T15:32:07 IST" name="searchForDress" data-provider="getSearchDataFromExcel" finished-at="2020-10-14T15:32:08 IST" duration-ms="1553" status="PASS">
+        <test-method signature="searchForDress(java.lang.String)[pri:1, instance:com.automationpractice.qa.testcases.SearchResultsPageTest@7e9131d5]" started-at="2020-10-14T16:03:54 IST" name="searchForDress" data-provider="getSearchDataFromExcel" finished-at="2020-10-14T16:03:56 IST" duration-ms="2267" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,19 +22,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchForDress -->
-        <test-method signature="addToCart()[pri:2, instance:com.automationpractice.qa.testcases.SearchResultsPageTest@7e9131d5]" started-at="2020-10-14T15:32:08 IST" name="addToCart" finished-at="2020-10-14T15:32:08 IST" duration-ms="204" status="PASS">
+        <test-method signature="addToCart()[pri:2, instance:com.automationpractice.qa.testcases.SearchResultsPageTest@7e9131d5]" started-at="2020-10-14T16:03:56 IST" name="addToCart" finished-at="2020-10-14T16:03:58 IST" duration-ms="1317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method signature="clickProceedToCart()[pri:3, instance:com.automationpractice.qa.testcases.SearchResultsPageTest@7e9131d5]" started-at="2020-10-14T15:32:08 IST" name="clickProceedToCart" finished-at="2020-10-14T15:32:11 IST" duration-ms="2867" status="PASS">
+        <test-method signature="clickProceedToCart()[pri:3, instance:com.automationpractice.qa.testcases.SearchResultsPageTest@7e9131d5]" started-at="2020-10-14T16:03:58 IST" name="clickProceedToCart" finished-at="2020-10-14T16:04:00 IST" duration-ms="1968" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickProceedToCart -->
-        <test-method signature="increaseTheCartQuantity()[pri:4, instance:com.automationpractice.qa.testcases.SearchResultsPageTest@7e9131d5]" started-at="2020-10-14T15:32:11 IST" name="increaseTheCartQuantity" finished-at="2020-10-14T15:32:14 IST" duration-ms="3104" status="PASS">
+        <test-method signature="increaseTheCartQuantity()[pri:4, instance:com.automationpractice.qa.testcases.SearchResultsPageTest@7e9131d5]" started-at="2020-10-14T16:04:00 IST" name="increaseTheCartQuantity" finished-at="2020-10-14T16:04:03 IST" duration-ms="3108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- increaseTheCartQuantity -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.automationpractice.qa.testcases.SearchResultsPageTest@7e9131d5]" started-at="2020-10-14T15:32:14 IST" name="closeBrowser" finished-at="2020-10-14T15:32:14 IST" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.automationpractice.qa.testcases.SearchResultsPageTest@7e9131d5]" started-at="2020-10-14T16:04:03 IST" name="closeBrowser" finished-at="2020-10-14T16:04:03 IST" duration-ms="53" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

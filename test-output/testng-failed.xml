@@ -5,11 +5,9 @@
     <classes>
       <class name="com.automationpractice.qa.testcases.SearchResultsPageTest">
         <methods>
-          <include name="increaseTheCartQuantity"/>
           <include name="closeBrowser"/>
           <include name="addToCart"/>
           <include name="setUp"/>
-          <include name="clickProceedToCart"/>
         </methods>
       </class> <!-- com.automationpractice.qa.testcases.SearchResultsPageTest -->
     </classes>

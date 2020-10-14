@@ -36,7 +36,7 @@ public class SearchResultsPageTest extends Main {
 	@Test(priority = 2)
 	public void addToCart() {
 		search.clickAddToCart();		
-//		Assert.assertEquals(search.verifyProductAddedToCart(), "");
+		Assert.assertEquals(search.verifyProductAddedToCart(), "Product successfully added to your shopping cart");
 	}
 
 	@Test(priority = 3)
