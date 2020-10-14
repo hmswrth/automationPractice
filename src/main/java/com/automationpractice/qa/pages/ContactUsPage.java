@@ -1,7 +1,6 @@
 package com.automationpractice.qa.pages;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -42,29 +41,36 @@ public class ContactUsPage extends Main {
 	public void selectSubjectHeading() {
 		Select select = new Select(selectBox);
 		select.selectByValue("2");
+//		log.info("subject heading selected successfully");
 	}
 
 	public void enterEmail(String testData) {
 		email.sendKeys(testData);
+//		log.info("email id entered successfully");
 	}
 
 	public void enterOrderID(String testData) {
 		double temp = Double.parseDouble(testData);
 		int order = (int) temp;
 		orderID.sendKeys(Integer.toString(order));
+//		log.info("order ID entered successfully");
 	}
 
 	public void uploadFile() {
 		fileUpload.sendKeys(System.getProperty("user.dir") + "/com/automationpractice/qa/testdata/peterpan.jpg");
+//		log.info("file uploaded successfully");
 	}
 
 	public void enterMessage(String testData) {
 		message.sendKeys(testData);
+//		log.info("message entered successfully");
 	}
 
 	public void submitButton() {
 		submitBtn.click();
+//		log.info("Form submitted successfully");
 		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		
 	}
 
 	public String verifySentMessage() {
