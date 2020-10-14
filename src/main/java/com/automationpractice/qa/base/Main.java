@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.automationpractice.qa.utils.BrowserSetup;
 
@@ -14,8 +16,10 @@ public class Main {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static JavascriptExecutor js;
-	public static long PAGE_LOAD_TIMEOUT = 20;  //default value for page loadout
+	public static long PAGE_LOAD_TIMEOUT = 30;  //default value for page loadout
 	public static long IMPLICIT_WAIT = 10;  //default implicit wait 
+	public static WebDriverWait wait;
+	public static Actions actions;
 	
 	public Main() {
 		
@@ -35,13 +39,16 @@ public class Main {
 		driver.manage().window().maximize(); //maximize the windows	
 		driver.manage().deleteAllCookies(); //clear cookies
 		
-		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS); //wait for the page to load
-		driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS); 
-		
 		driver.get(prop.getProperty("url")); //get url from the config file and pass it to the browser 
+		
+		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS); //wait for the page to load
+		driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
 		js = (JavascriptExecutor) driver; //instantiate js executor which can be used later
 		
+		wait = new WebDriverWait(driver, IMPLICIT_WAIT);
+		
+		actions = new Actions(driver);
 	}
 
 }

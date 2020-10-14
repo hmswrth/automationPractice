@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Udemy Automation Suite">
+	<listeners>
+		<listener
+			class-name="com.automationpractice.qa.utils.ExtentReportListener" />
+	</listeners>
+	<test name="Automation Practice Application TestCases">
+		<classes>
+			<class name="com.automationpractice.qa.testcases.HomePageTest" />
+			<class name="com.automationpractice.qa.testcases.SearchResultsPageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
