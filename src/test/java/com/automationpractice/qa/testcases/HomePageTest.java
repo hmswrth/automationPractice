@@ -10,9 +10,9 @@ import com.automationpractice.qa.pages.SearchResultsPage;
 import com.automationpractice.qa.utils.ReadFromExcel;
 
 public class HomePageTest extends Main {
-	static HomePage home;
-	static SearchResultsPage searchResultsPage;
-	static ContactUsPage contactUs;
+	HomePage home;
+	SearchResultsPage searchResultsPage;
+	ContactUsPage contactUs;
 	
 	public HomePageTest() {
 		super();
@@ -44,7 +44,7 @@ public class HomePageTest extends Main {
 	
 	@AfterMethod
 	public void closeBrowser() {
-		driver.close();
+		driver.quit();
 	}
 
 }

@@ -12,10 +12,10 @@ import com.automationpractice.qa.base.Main;
 
 public class SearchResultsPage extends Main {
 
-	@FindBy(xpath = "(//a[@title='Printed Summer Dress'])[2]")
+	@FindBy(xpath = "(//*[@id='center_column']//img[@title='Printed Summer Dress'])[1]")
 	WebElement searchListing;
 
-	@FindBy(xpath = "//a[@title='Add to cart'])[1]")
+	@FindBy(xpath = "(//a[@title='Add to cart'])[1]")
 	WebElement addToCartBtn;
 
 	@FindBy(xpath = "(//h2)[1]")
@@ -36,10 +36,23 @@ public class SearchResultsPage extends Main {
 
 	public void clickAddToCart() {
 		js.executeScript("arguments[0].scrollIntoView(true)", searchListing);
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+//		driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
 		actions.moveToElement(searchListing).perform();
-		// wait.until(ExpectedConditions.visibilityOf(addToCartBtn));
-		// addToCartBtn.click();
-		driver.findElement(By.xpath("(//a[@title='Add to cart'])[1]")).click();
+		
+//		driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
+//		try {
+//			Thread.sleep(3000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		addToCartBtn.click();
 		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 	}
 

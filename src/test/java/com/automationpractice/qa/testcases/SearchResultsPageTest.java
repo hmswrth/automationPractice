@@ -9,14 +9,14 @@ import com.automationpractice.qa.pages.SearchResultsPage;
 import com.automationpractice.qa.utils.ReadFromExcel;
 
 public class SearchResultsPageTest extends Main {
-	static HomePage home;
-	static SearchResultsPage search;
+	HomePage home;
+	SearchResultsPage search;
 
 	public SearchResultsPageTest() {
 		super();
 	}
 
-	@BeforeTest
+	@BeforeClass
 	public void setUp() {
 		init();
 		home = new HomePage();
@@ -50,8 +50,8 @@ public class SearchResultsPageTest extends Main {
 		Assert.assertEquals(search.verifyWhetherCartItemValueIncreased(), "2");
 	}
 	
-	@AfterTest
+	@AfterClass
 	public void closeBrowser() {
-		driver.close();
+		driver.quit();
 	}
 }

@@ -10,8 +10,8 @@ import com.automationpractice.qa.utils.ReadFromExcel;
 
 public class ContactUsPageTest extends Main {
 
-	static HomePage home;
-	static ContactUsPage contact;
+	HomePage home;
+	ContactUsPage contact;
 
 	public ContactUsPageTest() {
 		super();
@@ -45,6 +45,6 @@ public class ContactUsPageTest extends Main {
 
 	@AfterMethod
 	public void closeBrowser() {
-		driver.close();
+		driver.quit();
 	}
 }

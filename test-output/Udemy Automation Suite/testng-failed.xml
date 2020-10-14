@@ -8,22 +8,14 @@
     <classes>
       <class name="com.automationpractice.qa.testcases.SearchResultsPageTest">
         <methods>
-          <include name="increseTheCartQuantity"/>
+          <include name="increaseTheCartQuantity"/>
           <include name="searchForDress" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
           <include name="addToCart"/>
           <include name="setUp"/>
           <include name="clickProceedToCart"/>
         </methods>
       </class> <!-- com.automationpractice.qa.testcases.SearchResultsPageTest -->
-      <class name="com.automationpractice.qa.testcases.ContactUsPageTest">
-        <methods>
-          <include name="fillOutTheForm" invocation-numbers="0 1 2"/>
-          <include name="setUp"/>
-          <include name="submitBtnClick"/>
-          <include name="closeBrowser"/>
-          <include name="selectSubjectHeading"/>
-        </methods>
-      </class> <!-- com.automationpractice.qa.testcases.ContactUsPageTest -->
     </classes>
   </test> <!-- Automation Practice Application TestCases(failed) -->
 </suite> <!-- Failed suite [Udemy Automation Suite] -->
