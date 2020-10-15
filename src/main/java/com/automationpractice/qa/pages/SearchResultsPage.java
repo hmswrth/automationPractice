@@ -63,6 +63,11 @@ public class SearchResultsPage extends Main {
 		wait.until(ExpectedConditions.visibilityOf(proceedToCartBtn));
 		proceedToCartBtn.click();
 		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void increaseCartItemQuantity() {

@@ -1,1 +1,17 @@
-2020-10-15 00:06:15,787 DEBUG [main] HomePageTest:26 - launching chrome driver
+2020-10-15 16:03:53,757  INFO [main] HomePageTest:26 - chrome driver : initializing...
+2020-10-15 16:04:12,524  INFO [main] HomePageTest:39 - START : search box test
+2020-10-15 16:04:18,560  INFO [main] HomePageTest:42 - END : search box test
+2020-10-15 16:04:18,561  INFO [main] HomePageTest:55 - chrome driver : terminated!
+2020-10-15 16:04:19,186  INFO [main] HomePageTest:26 - chrome driver : initializing...
+2020-10-15 16:04:36,782  INFO [main] HomePageTest:47 - START : contact us button test
+2020-10-15 16:04:41,503  INFO [main] HomePageTest:50 - END : contact us button test
+2020-10-15 16:04:41,504  INFO [main] HomePageTest:55 - chrome driver : terminated!
+2020-10-15 16:04:42,127  INFO [main] SearchResultsPageTest:24 - chrome driver : initializing...
+2020-10-15 16:05:00,055  INFO [main] SearchResultsPageTest:37 - START : search box test
+2020-10-15 16:05:00,204  INFO [main] SearchResultsPageTest:39 - END : search box test
+2020-10-15 16:05:00,205  INFO [main] SearchResultsPageTest:44 - START : add an item to cart test
+2020-10-15 16:05:10,909  INFO [main] SearchResultsPageTest:47 - END : add an item to cart test
+2020-10-15 16:05:10,910  INFO [main] SearchResultsPageTest:52 - START : proceed to cart test
+2020-10-15 16:05:19,688  INFO [main] SearchResultsPageTest:54 - END : proceed to cart test
+2020-10-15 16:05:19,690  INFO [main] SearchResultsPageTest:59 - START : increasing the item quantity during checkout test
+2020-10-15 16:05:22,822  INFO [main] SearchResultsPageTest:67 - chrome driver : terminated!
