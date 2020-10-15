@@ -1,7 +1,7 @@
-com\automationpractice\qa\utils\ReadFromExcel.class
-com\automationpractice\qa\pages\SearchResultsPage.class
-com\automationpractice\qa\pages\HomePage.class
 com\automationpractice\qa\utils\ExtentReportListener.class
 com\automationpractice\qa\base\Main.class
 com\automationpractice\qa\pages\ContactUsPage.class
+com\automationpractice\qa\utils\ReadFromExcel.class
+com\automationpractice\qa\pages\SearchResultsPage.class
+com\automationpractice\qa\pages\HomePage.class
 com\automationpractice\qa\utils\BrowserSetup.class
